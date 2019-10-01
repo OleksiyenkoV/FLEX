@@ -1,65 +1,53 @@
-*{
-    margin: 0;
+body{
+    background: #111;
     display: flex;
-    flex-direction: column-reverse;
-    justify-content: space-around;
-    align-items: flex-end;
-
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin:0;
 }
 
-body {
-    background: #009688;
-}
-
-.container
-.house, .house2, .house3, .house4 {
-    background: red;
-    display: inline-block;
-    height: 210px;
+.house{
+	background: red;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 410px;
     margin-left: 170px;
     margin-top: 205px;
-    position: relative;
-    width: 310px;
+    width: 610px;
 }
-
-
 .roof {
-    border-bottom: 80px solid blue;
-    border-left: 155.90px solid transparent;
-    border-right: 155px solid transparent;
+    border-bottom: 150px solid blue;
+    border-left: 325px solid transparent;
+    border-right: 325px solid transparent;
     position: absolute;
-    top: -80px;
+    top: 231.5px;
 }
 
-.door{
-    position: absolute;
-    display:inline-block; 
+#door{
+    display:inline-block;
+    justify-content: flex-start; 
     background: green;
-    left: 115px;
-    top: 90px;
     height: 120px;
     width: 70px;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    top: -225px;
 }
 
-.window{
-    position: absolute;
-    display:inline-block; 
-    background: #00f7eb;
-    left: 20px;
-    top: 70px;
-    height: 70px;
-    width: 70px;
-
+#window{
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+    width:100%;
+}
+#window:after, #window:before{
+    content: '';
+    display: inline-block;
+    height:55px;
+    width:55px;
+    background: lightblue;
 }
 
-.window2{
-    position: absolute;
-    display:inline-block; 
-    background: #00f7eb;
-    right: 20px;
-    top: 70px;
-    height: 70px;
-    width: 70px;
-
-}
 
